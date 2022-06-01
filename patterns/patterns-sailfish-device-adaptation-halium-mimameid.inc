@@ -19,7 +19,6 @@ Requires: qt5-plugin-generic-evdev
 Requires: libtls-padding
 
 # Hybris packages
-Requires: libhybris=0.0.5.42+libui_gralloc_rpm.20220511204129.9.gd4ad90e
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
