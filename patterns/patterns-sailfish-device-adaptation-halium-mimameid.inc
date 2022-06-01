@@ -15,6 +15,9 @@ Requires: droid-hal-version-halium-mimameid
 
 Requires: qt5-plugin-generic-evdev
 
+# Fixes off MTK behaviour
+Requires: libtls-padding
+
 # Hybris packages
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
