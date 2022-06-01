@@ -4,6 +4,7 @@ Summary: Sailfish HW Adaptation halium-mimameid
 #Requires: droid-hal-halium-mimameid
 #Requires: droid-hal-halium-mimameid-img-boot
 #Requires: droid-hal-halium-mimameid-kernel-modules
+Requires: droid-hal-vendor-img-halium-mimameid
 Requires: droid-config-halium-mimameid-sailfish
 Requires: droid-config-halium-mimameid-pulseaudio-settings
 Requires: droid-config-halium-mimameid-policy-settings
