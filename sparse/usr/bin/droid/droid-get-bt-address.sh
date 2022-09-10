@@ -1,13 +1,12 @@
 #!/bin/sh
-echo "droid-get-bt-address: Setting up bluetooth address"
 
-addresspath="/var/lib/bluetooth/"
-addressfile="$addresspath/board-address"
+while [ "$(/usr/bin/getprop vendor.service.nvram_init)" != "Ready" ]; do
+    sleep 1
+done
 
-mac=$(hciconfig | grep Address | grep -o "[[:xdigit:]:]\{11,17\}")
-if [ ! -f "$addressfile" ] && [ ! -z "$mac" ]; then
-    echo "File not found, saving address"
-    mkdir -p "$addresspath"
-    chmod 0755 "$addresspath"
-    echo $mac > "$addressfile"
+FILE=/mnt/vendor/nvdata/APCFG/APRDEB/BT_Addr
+if [ -f "$FILE" ]; then
+    hexdump -s 0 -n 6 -ve '/1 "%02X:"' $FILE | sed "s/:$//g" > /var/lib/bluetooth/board-address
+else
+    hexdump -s 0 -n 6 -ve '/1 "%02X:"' /vendor/nvdata/APCFG/APRDEB/BT_Addr | sed "s/:$//g" > /var/lib/bluetooth/board-address
 fi
