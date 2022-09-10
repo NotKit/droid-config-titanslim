@@ -104,3 +104,5 @@ ACTION=="add", KERNEL=="kick_powerkey", OWNER="system", GROUP="system", MODE="06
 ACTION=="add", KERNEL=="ttyACM0", OWNER="radio", GROUP="radio", MODE="0660"
 ACTION=="add", KERNEL=="access-kregistry", OWNER="system", GROUP="system", MODE="0660"
 ACTION=="add", KERNEL=="mtk_disp_mgr", OWNER="graphics", GROUP="graphics", MODE="0660"
+ACTION=="add", KERNEL=="mdp_sync", OWNER="graphics", GROUP="graphics", MODE="0660"
+ACTION=="add", KERNEL=="mtk_cmdq", OWNER="graphics", GROUP="graphics", MODE="0660"
