@@ -1,7 +1,7 @@
 %package -n patterns-sailfish-device-adaptation-halium-mimameid
 Summary: Sailfish HW Adaptation halium-mimameid
 
-Requires: kernel-adaptation-halium-qx1050
+Requires: kernel-adaptation-halium-mimameid
 Requires: droid-config-halium-mimameid-sailfish
 Requires: droid-config-halium-mimameid-pulseaudio-settings
 Requires: droid-config-halium-mimameid-policy-settings
