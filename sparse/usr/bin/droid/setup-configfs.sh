@@ -19,7 +19,7 @@ write $GADGET_DIR/g1/strings/0x409/manufacturer "Halium"
 write $GADGET_DIR/g1/strings/0x409/product      "Halium Device"
 
 if echo $USB_FUNCTIONS | grep -q "rndis"; then
-    mkdir $GADGET_DIR/g1/functions/gsi.rndis
+    mkdir $GADGET_DIR/g1/functions/rndis.gs4
 fi
 echo $USB_FUNCTIONS | grep -q "mass_storage" && mkdir $GADGET_DIR/g1/functions/storage.0
 
@@ -28,9 +28,9 @@ mkdir $GADGET_DIR/g1/configs/b.1/strings/0x409
 write $GADGET_DIR/g1/configs/b.1/strings/0x409/configuration "$USB_FUNCTIONS"
 
 if echo $USB_FUNCTIONS | grep -q "rndis"; then
-    ln -s $GADGET_DIR/g1/functions/gsi.rndis $GADGET_DIR/g1/configs/b.1
+    ln -s $GADGET_DIR/g1/functions/rndis.gs4 $GADGET_DIR/g1/configs/b.1
 fi
 echo $USB_FUNCTIONS | grep -q "mass_storage" && ln -s $GADGET_DIR/g1/functions/storage.0 $GADGET_DIR/g1/configs/b.1
 
 echo "$(ls /sys/class/udc)" > $GADGET_DIR/g1/UDC
- 
+
