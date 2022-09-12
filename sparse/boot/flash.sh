@@ -17,7 +17,6 @@ fi
 echo "
 $(tput setaf 220)Be aware, the flashing process might take up to 10 minutes.
 The screen is expected to go black. This is fine, flashing continues.$(tput sgr0)
-$(tput setaf 2)Initiating reboot to fastbootd.$(tput sgr0)
 "
 
 fastboot $* getvar product 2>&1 | grep "^product: *k69v1_64"
