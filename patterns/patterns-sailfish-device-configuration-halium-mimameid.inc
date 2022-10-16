@@ -51,6 +51,9 @@ Requires: sailfish-fpd-community
 Requires: sailfish-devicelock-fpd
 #Requires: droid-fake-crypt
 
+#WLAN Suspend
+Requires: sailfish-connman-plugin-suspend
+
 %description -n patterns-sailfish-device-configuration-halium-mimameid
 Pattern with packages for halium-mimameid configurations
 
