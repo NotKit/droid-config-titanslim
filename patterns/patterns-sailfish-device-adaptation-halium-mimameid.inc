@@ -1,6 +1,7 @@
 %package -n patterns-sailfish-device-adaptation-halium-mimameid
 Summary: Sailfish HW Adaptation halium-mimameid
 
+Requires: droid-hal-vendor-img-halium-mimameid
 Requires: kernel-adaptation-halium-mimameid
 Requires: droid-config-halium-mimameid-sailfish
 Requires: droid-config-halium-mimameid-pulseaudio-settings
