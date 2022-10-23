@@ -9,6 +9,7 @@ whitelist /dev/urandom
 whitelist /dev/binder
 whitelist /dev/socket/property_service
 whitelist /dev/shm
+whitelist /dev/ashmem
 
 #This is to allow loading libtlspadding
 private-etc ld.so.preload
