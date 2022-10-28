@@ -2,7 +2,7 @@
 
 #Set up configfs as we are not using droid-boot init-script
 
-USB_FUNCTIONS=rndis
+USB_FUNCTIONS=rndis,mtp
 GADGET_DIR=/sys/kernel/config/usb_gadget
 
 # Sugar for accessing usb config
@@ -22,6 +22,7 @@ if echo $USB_FUNCTIONS | grep -q "rndis"; then
     mkdir $GADGET_DIR/g1/functions/rndis.gs4
 fi
 echo $USB_FUNCTIONS | grep -q "mass_storage" && mkdir $GADGET_DIR/g1/functions/storage.0
+echo $USB_FUNCTIONS | grep -q "mtp" && mkdir $GADGET_DIR/g1/functions/ffs.mtp
 
 mkdir $GADGET_DIR/g1/configs/b.1
 mkdir $GADGET_DIR/g1/configs/b.1/strings/0x409
