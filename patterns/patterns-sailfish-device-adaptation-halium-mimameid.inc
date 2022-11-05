@@ -17,6 +17,7 @@ Requires: qt5-plugin-generic-evdev
 Requires: libtls-padding
 
 # Hybris packages
+Requires: (libhybris >= 0.0.5.45+mtk1 and libhybris < 0.0.5.46)
 Requires: libhybris-libEGL
 Requires: libhybris-libGLESv2
 Requires: libhybris-libwayland-egl
