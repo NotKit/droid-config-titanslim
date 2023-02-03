@@ -31,7 +31,7 @@ Requires: bluez5-tools
 Requires: bluebinder
 
 # Ofono
-Requires: ofono-ril-binder-plugin
+Requires: ofono-binder-plugin
 Requires: dummy_netd
 
 # NFC
