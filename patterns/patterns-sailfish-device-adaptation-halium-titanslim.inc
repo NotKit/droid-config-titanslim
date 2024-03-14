@@ -1,15 +1,13 @@
-%package -n patterns-sailfish-device-adaptation-halium-mimameid
-Summary: Sailfish HW Adaptation halium-mimameid
+%package -n patterns-sailfish-device-adaptation-halium-titanslim
+Summary: Sailfish HW Adaptation halium-titanslim
 
-Requires: droid-hal-vendor-img-halium-mimameid
-Requires: kernel-adaptation-halium-mimameid
-Requires: droid-config-halium-mimameid-sailfish
-Requires: droid-config-halium-mimameid-pulseaudio-settings
-Requires: droid-config-halium-mimameid-policy-settings
-Requires: droid-config-halium-mimameid-preinit-plugin
-Requires: droid-config-halium-mimameid-flashing
-Requires: droid-config-halium-mimameid-bluez5
-Requires: droid-hal-version-halium-mimameid
+Requires: droid-config-halium-titanslim-sailfish
+Requires: droid-config-halium-titanslim-pulseaudio-settings
+Requires: droid-config-halium-titanslim-policy-settings
+Requires: droid-config-halium-titanslim-preinit-plugin
+Requires: droid-config-halium-titanslim-flashing
+Requires: droid-config-halium-titanslim-bluez5
+Requires: droid-hal-version-halium-titanslim
 
 Requires: qt5-plugin-generic-evdev
 
@@ -91,7 +89,7 @@ Requires: geoclue-provider-hybris
 # For mounting SD card automatically
 Requires: sd-utils
 
-%description -n patterns-sailfish-device-adaptation-halium-mimameid
-Pattern with packages for halium-mimameid HW Adaptation
+%description -n patterns-sailfish-device-adaptation-halium-titanslim
+Pattern with packages for halium-titanslim HW Adaptation
 
-%files -n patterns-sailfish-device-adaptation-halium-mimameid
+%files -n patterns-sailfish-device-adaptation-halium-titanslim

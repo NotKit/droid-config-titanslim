@@ -1,8 +1,8 @@
-%package -n patterns-sailfish-device-configuration-halium-mimameid
-Summary: Sailfish HW Adaptation halium-mimameid
+%package -n patterns-sailfish-device-configuration-halium-titanslim
+Summary: Sailfish HW Adaptation halium-titanslim
 
-Requires: patterns-sailfish-device-configuration-common-halium-mimameid
-Requires: patterns-sailfish-device-adaptation-halium-mimameid
+Requires: patterns-sailfish-device-configuration-common-halium-titanslim
+Requires: patterns-sailfish-device-adaptation-halium-titanslim
 
 Requires: patterns-sailfish-cellular-apps
 Requires: patterns-sailfish-applications
@@ -12,7 +12,7 @@ Requires: patterns-sailfish-ui
 # brought up (useful during development, available since update10)
 Requires: jolla-rnd-device
 
-Requires: sailfish-content-graphics-z1.5
+Requires: sailfish-content-graphics-z1.25
 
 # For NFC
 Requires: jolla-settings-system-nfc
@@ -72,7 +72,7 @@ Recommends: zypper
 Recommends: strace
 Recommends: jolla-rnd-device
 
-%description -n patterns-sailfish-device-configuration-halium-mimameid
-Pattern with packages for halium-mimameid configurations
+%description -n patterns-sailfish-device-configuration-halium-titanslim
+Pattern with packages for halium-titanslim configurations
 
-%files -n patterns-sailfish-device-configuration-halium-mimameid
+%files -n patterns-sailfish-device-configuration-halium-titanslim
