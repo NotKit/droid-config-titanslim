@@ -29,6 +29,11 @@ AutoReqProv: no
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
 %include droid-configs-device/droid-configs.inc
+
+%triggerin -- droid-config-halium-devel, droid-config-halium-testing
+# Override Halium LXC container configuration
+ln -sf config.titan /var/lib/lxc/android/config
+
 %include patterns/patterns-sailfish-device-adaptation-halium-titanslim.inc
 %include patterns/patterns-sailfish-device-configuration-halium-titanslim.inc
 
