@@ -20,6 +20,9 @@
 # Other screen sizes and ratios will require more trial-and-error.
 %define pixel_ratio 1.5
 
+# For adaptation-halium repository to get included while generating kickstart
+BuildRequires: droid-config-halium
+
 Provides: ofono-configs-binder
 Provides: ofono-configs
 Requires: droid-config-halium
